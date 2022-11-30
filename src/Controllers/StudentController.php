@@ -1,16 +1,17 @@
 <?php
 
-namespace rockSchool\Controllers;
+namespace App\Controllers;
 
-use rockSchool\Models\Student;
-use rockSchool\Core\View;
+use App\Models\Student;
 
 class StudentController{
 
     public function __construct(){
-
-// aqui los botones de crear y store 
-     
+        $this->index();
+    }
+    public function index(){
+        $student = new Student();
+        $students = $student->all();
     }
 
 

@@ -1,7 +1,7 @@
 <?php
 
-namespace rockSchool;
+namespace App;
 
-use rockSchool\Controllers\StudentController;
+use App\Controllers\StudentController;
 
 $controller = new StudentController();

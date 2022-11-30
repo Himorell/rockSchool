@@ -1,6 +1,6 @@
 <?php
 
-namespace rockschool;
+namespace App;
 
 use PDOException;
 use PDO;
@@ -25,7 +25,7 @@ class Database {
         $host = "localhost";
         $user = "root";
         $password = "";
-        $database = "rockSchool";
+        $database = "rockschool";
 
         $charset = "utf-8";
         $options = [PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC];
