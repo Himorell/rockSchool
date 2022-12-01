@@ -9,9 +9,14 @@ class StudentController{
     public function __construct(){
         $this->index();
     }
+
     public function index(){
-        $student = new Student();
+
+        $student = new Student;
+        
         $students = $student->all();
+
+        new View("studentList",["student"=> $students]);
     }
 
 

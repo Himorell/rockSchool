@@ -14,7 +14,7 @@ class Database {
         try{
             $this->mysql = $this->getConnection();
             echo "Conexion realizada satisfactoriamente";
-         }
+        }
 
         catch (PDOException $e){
             echo "Conexion Fallida : " . $e->getMessage();
@@ -22,6 +22,7 @@ class Database {
     }
 
     private function getConnection(){
+        
         $host = "localhost";
         $user = "root";
         $password = "";
