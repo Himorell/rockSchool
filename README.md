@@ -9,7 +9,7 @@ ZoombadassRockSchool
 ***
 ## Group members:
 
-  * Paloma          https://github.com/Uxoa
+  * Paloma    #### https://github.com/Uxoa
   * Himo      https://github.com/Himorell
   * Veronica  https://github.com/veflo13
   * Carmen    https://github.com/CarmenCruces
