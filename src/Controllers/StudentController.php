@@ -19,7 +19,7 @@ class StudentController{
             $this->store($_POST);  
             return;
         }
-     
+
         $this->index();
 
     }
@@ -33,7 +33,6 @@ class StudentController{
 
         new View("studentList",["student" => $students]);
 
-       
     }
 
  //La C de crud necesita dos métodos

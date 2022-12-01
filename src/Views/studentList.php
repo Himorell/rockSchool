@@ -9,10 +9,10 @@
 
         <div class="card" style="width: 18rem;">
   <div class="card-header">
-    Class music appointments
-   
-      <a href="?action=create"  class="btn btn-primary btn-sm">Add Task</a>
- 
+    Students class reservations
+
+      <a href="?action=create"  class="btn btn-primary btn-sm">Add reservations</a>
+
 </div>
 
   </div>
@@ -44,10 +44,10 @@
                             </td>
                         </tr>
                         ";
-                         }?>
-                         
-       </tr>
- 
+                    }?>
+
+      </tr>
+
     </tbody>
 
   </table>

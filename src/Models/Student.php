@@ -18,10 +18,10 @@ class Student{
     public function __construct(
         $id = null, string $student = '', string $message = '', string $dateTime = '')
         {
-           $this->id =$id;
-           $this->student =$student;
-           $this->message =$message;
-           $this->dateTime =$dateTime;
+            $this->id =$id;
+            $this->student =$student;
+            $this->message =$message;
+            $this->dateTime =$dateTime;
 
         if(!$this->database){
             $this->database = new Database();
@@ -31,7 +31,7 @@ class Student{
     public function all(){
         $query = $this->database->mysql->query("select * from {$this->table}");
         $studentArray = $query->fetchAll();
-      
+
         $studentList = [];
 
         foreach ($studentArray as $student){
@@ -39,9 +39,8 @@ class Student{
 
             array_push($studentList, $studentItem);
         }
-       
+
         return $studentList; 
-     
         
     }
 
