@@ -15,8 +15,7 @@ class Student{
     private $table = "reservations";
     private $database;
 
-    public function __construct(
-        $id = null, string $student = '', string $message = '', string $dateTime = '')
+    public function __construct( $id = null, string $student = '', string $message = '', string $dateTime = null)
         {
             $this->id =$id;
             $this->student =$student;
@@ -69,7 +68,7 @@ class Student{
     public function findById($id){
         $query = $this->database->mysql->query("SELECT * FROM `{$this->table}` WHERE `id` = {$id}");
         $result = $query->fetchAll();
-
+        
         return new Student($result[0]["id"], $result[0]["student"], $result[0]["message"], $result[0]["dateTime"]);
     }
 

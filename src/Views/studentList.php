@@ -11,7 +11,7 @@
   <div class="card-header">
     Students class reservations
 
-      <a href="?action=create"  class="btn btn-primary btn-sm">Add reservations</a>
+      <a href="?action=create"  class="btn btn-primary btn-sm">Add reservations</a> 
 
 </div>
 
@@ -31,7 +31,7 @@
 
       <?php
                 foreach ($data["student"] as $student) {
-                  
+                  /* <a href='?action=edit&id={$student->getId()}'> edit </a> */
                     echo "
                     <tr>    
                             <td>{$student->getId()}</td>
@@ -39,7 +39,7 @@
                             <td>{$student->getMessage()}</td>
                             <td>{$student->getDateTime()}</td>
                             <td>
-                            <a href='?action=edit&id={$student->getId()}'> edit </a>
+                            
                             <a href='?action=delete&id={$student->getId()}'> delete </a>
                             </td>
                         </tr>

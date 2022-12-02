@@ -15,12 +15,12 @@ class StudentController{
             return;
         }
 
-        if(isset($_GET["action"]) == "store"){
+        if(isset($_GET["action"]) && ($_GET["action"]) == "store"){
             $this->store($_POST);  
             return;
         }
 
-        if(isset($_GET["action"]) == "delete"){
+        if(isset ($_GET["action"]) && ($_GET["action"]) == "delete"){
             $this->delete($_GET["id"]);  
             return;
         }
@@ -46,14 +46,14 @@ public function create(){
 }
 
 public function store(array $request){
-    $newStudent = new Student(null,$request["student"],$request["message"]);
-    $newStudent -> save();
+    $newStudent = new Student(null,$request["student"],$request["message"]); 
+    $newStudent -> save(); 
     $this->index();
 }
 
 public function delete($id){
-    $studentHelper = new Student(null,$request["student"],$request["message"],null); //revisar orden de variable DB
-    $student -> $studentHelper->findById($id);
+    $studentHelper = new Student(); //revisar orden de variable DB
+    $student = $studentHelper->findById($id);
     $student->destroy();
 
     $this->index();
