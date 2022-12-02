@@ -65,4 +65,17 @@ class Student{
         $this->database->mysql->query("INSERT INTO `{$this->table}` (`student`, `message`) VALUES ('$this->student','$this->message');");
         
     }
+
+    public function findById($id){
+        $query = $this->database->mysql->query("SELECT * FROM `{$this->table}` WHERE `id` = {$id}");
+        $result = $query->fetchAll();
+
+        return new Student($result[0]["id"], $result[0]["student"], $result[0]["message"], $result[0]["dateTime"]);
+    }
+
+    public function destroy(){
+        $query = $this->database->mysql->query("DELETE FROM `{$this->table}` WHERE `{$this->table}`.`id` = {$this->id}");
+
+    }
+
 }

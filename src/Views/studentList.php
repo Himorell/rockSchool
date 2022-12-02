@@ -39,8 +39,8 @@
                             <td>{$student->getMessage()}</td>
                             <td>{$student->getDateTime()}</td>
                             <td>
-                            <a href='?action=edit&id={$student->getId()}'><i class='btn  btn-warning btn-sm lnr lnr-pencil'></i></a>
-                            <a href='?action=delete&id={$student->getId()}'><i class='btn  btn-danger btn-sm lnr lnr-trash'></i></a>
+                            <a href='?action=edit&id={$student->getId()}'> edit </a>
+                            <a href='?action=delete&id={$student->getId()}'> delete </a>
                             </td>
                         </tr>
                         ";

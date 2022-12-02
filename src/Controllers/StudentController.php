@@ -20,6 +20,11 @@ class StudentController{
             return;
         }
 
+        if(isset($_GET["action"]) == "delete"){
+            $this->delete($_GET["id"]);  
+            return;
+        }
+
         $this->index();
 
     }
@@ -45,5 +50,14 @@ public function store(array $request){
     $newStudent -> save();
     $this->index();
 }
+
+public function delete($id){
+    $studentHelper = new Student(null,$request["student"],$request["message"],null); //revisar orden de variable DB
+    $student -> $studentHelper->findById($id);
+    $student->destroy();
+
+    $this->index();
+}
+
 }
 
