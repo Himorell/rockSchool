@@ -31,6 +31,7 @@ ZoombadassRockSchool
 
 ## Stacks:
 
+HTML, CSS, JS, PHP, GITHUB, BOOTSTRAP, MYSQL, GIT.
 ***
 ## Methodology:
 
