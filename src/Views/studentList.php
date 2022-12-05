@@ -40,15 +40,17 @@
                             <td>{$student->getDateTime()}</td>
                             <td>
                             <a href='?action=edit&id={$student->getId()}'> edit </a>
-                            <a href='?action=delete&id={$student->getId()}'> delete </a>
+                            <a class=actionDelete href='?action=delete&id={$student->getId()}'> delete </a>
                             </td>
-                        </tr>
+                        </tr> 
                         ";
                     }?>
 
       </tr>
 
+
     </tbody>
+
 
   </table>
 </div>
@@ -57,7 +59,9 @@
         </main>
 
 
-    <?php require_once("Components/footer.php");?>    
+    <?php require_once("Components/footer.php");?>  
+    <!-- <script src="./js/main.js"></script> -->
+
     </body>
 
 

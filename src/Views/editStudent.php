@@ -21,15 +21,18 @@
                 <input class="form-control" area-label="With textarea" type="text" name="message" required value='<?php echo $data["student"]->getMessage() ?>'>
             </div>
             <div class="botones" style="margin-bottom: 2rem;">
-                <input class="btn-lg btn-outline-success go-add-task float"type="submit" value="Edit">
+                <input class=editStudent type="submit" value="Edit">
                 <input class="btn-lg btn-outline-warning go-add-task float"type="reset" value="Reset">
             </div>
-               
+            
         </form>
     </main>
 </div>
     <?php 
     require_once("Components/Footer.php");
     ?>
+    
+<script src="./js/main.js"></script>
+
 
 </body>
