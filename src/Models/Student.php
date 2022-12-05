@@ -77,4 +77,16 @@ class Student{
 
     }
 
+    public function rename($studentNew,$messageNew)
+    {
+        $this->student = $studentNew;
+        $this->message = $messageNew;
+        
+    }
+
+    public function Update()
+    {
+        $this->database->mysql->query("UPDATE `{$this->table}` SET `student` =  '{$this->student}', `message` =  '{$this->message}' WHERE `id` = {$this->id}");
+    }
+
 }

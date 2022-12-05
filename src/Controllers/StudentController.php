@@ -25,6 +25,16 @@ class StudentController{
             return;
         }
 
+        if(isset ($_GET["action"]) && ($_GET["action"]) == "edit"){
+            $this->edit($_GET["id"]);  
+            return;
+        }
+
+        if (isset($_GET["action"]) && ($_GET["action"] == "update")) {
+            $this->update($_POST, $_GET["id"]);
+            return;
+        }
+
         $this->index();
 
     }
@@ -58,6 +68,29 @@ public function delete($id){
 
     $this->index();
 }
+
+public function edit($id)
+    {
+        //Find Student By Id
+        $studentHelper = new Student();
+        $student = $studentHelper->findById($id);
+        //Execute view with student atributes
+        new View("EditStudent", ["student" => $student]);
+    }
+
+    public function update(array $request, $id)
+    {
+        // Update Student By ID
+        $studentHelper = new Student();
+        $student = $studentHelper->findById($id);
+        $student->rename($request["student"],$request["message"]);
+        $student->update();
+        
+        
+
+        // Return to View List
+        $this->index();
+    }
 
 }
 
