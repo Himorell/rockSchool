@@ -7,26 +7,23 @@
 
         <main>
 
-        <div class="card" style="width: 18rem;">
-  <div class="card-header">
-    Students class reservations
+        <div class="actionCreate">
+          <h1>Students class reservations</h1>
+          <a href="?action=create"  class="btn btn-primary btn-sm">Add reservations</a> 
+        </div>
+        <div class="containerTable">
+            <table class="card-table table">
+                <thead>
+                    <tr>
+                      <th scope="col">id</th>
+                      <th scope="col">Student</th>
+                      <th scope="col">Message</th>
+                      <th scope="col">Datatime</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
 
-      <a href="?action=create"  class="btn btn-primary btn-sm">Add reservations</a> 
-
-</div>
-
-  </div>
-  <table class="card-table table">
-    <thead>
-      <tr>
-        <th scope="col">id</th>
-        <th scope="col">Student</th>
-        <th scope="col">Message</th>
-        <th scope="col">Datatime</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
 
 
       <?php
@@ -46,13 +43,14 @@
                         ";
                     }?>
 
-      </tr>
+                    </tr>
 
 
-    </tbody>
+                  </tbody>
 
 
-  </table>
+                </table>
+        </div>
 </div>
         
             
