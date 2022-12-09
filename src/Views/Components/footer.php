@@ -1,3 +1,4 @@
+</body>
 <footer>
 
     <div><img src="./public/images/imagesWeb.png" alt="Logos redes sociales" 
@@ -6,5 +7,4 @@
       <div class="footerCopy">
       <small>Copyright &copy; Zoombadass RockSchool</small>
     </div>
-  
-  </footer>
+</footer>
