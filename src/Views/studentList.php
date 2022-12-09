@@ -27,6 +27,7 @@
                         <th scope="col">Student</th>
                         <th scope="col">Message</th>
                         <th scope="col">Datatime</th>
+                        <th class="borderActions" scope="col">Actions</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -40,7 +41,7 @@
                         <td>{$student->getMessage()}</td>
                         <td>{$student->getDateTime()}</td>
 
-                        
+
                         <td class='actionButtons'>
                             <div class='boxActionDelete' onclick='executeExample('multipleInputs')'>
                                 <a href='?action=delete&id={$student->getId()}' class='actionDelete'> delete </a>
