@@ -6,7 +6,7 @@
     <main>
             <h1>Students class reservations</h1>
             <div class="addReservation">
-                <a href="?action=create" class="actionCreate" onclick="executeExample('multipleInputs')">Add reservation</a> 
+                <a href="?action=create" class="actionCreate">Add reservation</a> 
                 <div id="bars">
                     <div class="bar"></div>
                     <div class="bar"></div>

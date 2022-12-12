@@ -137,16 +137,29 @@ a.actionCreate:hover{
 
 table{
     width: 50%;
-    height: 60%;
+    height: 300px;
     margin:auto;
     box-sizing: content-box;
+    padding: 0 0 0 50px;
     background-color: white;
     border: 1px solid black;
     opacity: 0.75;
     border-radius: 1em;
     overflow-y: scroll;
     text-align: center;
-    display: table;
+    display: unset;
+}
+
+table::-webkit-scrollbar{
+    position: absolute;
+    border-radius: 0;
+    border-left: 1px solid #cccccc;
+    height: 20px!Important;
+    z-index: 0;
+    background-image: url(https://images.emojiterra.com/twitter/v13.1/512px/1f7e6.png);
+    background-size: 10px;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 th {
