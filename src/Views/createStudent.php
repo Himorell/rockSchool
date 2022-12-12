@@ -30,7 +30,7 @@ require_once("Components/header.php");
             </div>
 
             <div class="buttonGroup">
-                <input type="submit" value="Create">
+                <input type="submit" value="Add">
                 <input type="reset" value="Reset">
             </div>
         </form>

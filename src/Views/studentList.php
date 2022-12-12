@@ -42,14 +42,16 @@
                         <td>{$student->getDateTime()}</td>
 
 
-                        <td class='actionButtons'>
-                            <div class='boxActionDelete' onclick='executeExample('multipleInputs')'>
-                                <a href='?action=delete&id={$student->getId()}' class='actionDelete'> delete </a>
-                                <span class='iconDel'></span>
-                            </div>
-                            <div class='boxActionEdit'>
-                                <a href='?action=edit&id={$student->getId()}' class='actionEdit'> edit </a>
-                                <span class='iconEdit'></span>
+                        <td>
+                            <div class='actionButtons'>
+                                <div class='boxActionDelete' onclick='executeExample('multipleInputs')'>
+                                    <a href='?action=delete&id={$student->getId()}' class='actionDelete'> delete </a>
+                                    <span class='iconDel'></span>
+                                </div>
+                                <div class='boxActionEdit'>
+                                    <a href='?action=edit&id={$student->getId()}' class='actionEdit'> edit </a>
+                                    <span class='iconEdit'></span>
+                                </div>
                             </div>
                         </td>
 
