@@ -137,10 +137,10 @@ a.actionCreate:hover{
 
 table{
     width: 50%;
-    height: 300px;
+    height: 280px;
     margin:auto;
     box-sizing: content-box;
-    padding: 0 0 0 50px;
+    padding: 0 0 0 0px;
     background-color: white;
     border: 1px solid black;
     opacity: 0.75;
@@ -149,6 +149,8 @@ table{
     text-align: center;
     display: unset;
 }
+
+
 
 table::-webkit-scrollbar{
     position: absolute;
@@ -162,13 +164,30 @@ table::-webkit-scrollbar{
     background-position: center center;
 }
 
-th {
+thead{    
+    width: 100%;
+    display:block;
+    display: table-header-group;
+    border:2px solid red;
+}
+
+
+
+td.col{
+    width:200px;
     border-radius: 1em 0 1em 0;
     padding: 5px;
     background: rgb(0, 0, 0);
     color: white;
     opacity: unset;
+}
+
+tbody{
     
+    width: 100%;
+    margin: 0px;
+    display: block;
+    padding: 0px;
 }
 
 th.borderActions{

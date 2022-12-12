@@ -21,16 +21,15 @@
                 </div>
             </div>
             <table>
-                <thead>
+               
                     <tr>
-                        <th scope="col">id</th>
-                        <th scope="col">Student</th>
-                        <th scope="col">Message</th>
-                        <th scope="col">Datatime</th>
-                        <th class="borderActions" scope="col">Actions</th>
+                        <td class="col" scope="col">id</td>
+                        <td class="col"  scope="col">Student</td>
+                        <td class="col" scope="col">Message</td>
+                        <td class="col" scope="col">Datatime</td>
+                        <td class="col" class="borderActions" scope="col">Actions</td>
                     </tr>
-                </thead>
-                <tbody>
+               
                     <tr>
                 <?php
                 foreach ($data["student"] as $student) {
@@ -61,7 +60,7 @@
                     }
                 ?>
                     </tr>
-                </tbody>
+              
             </table>
             <div class="musicNotes">
                 <div class="note-1">
