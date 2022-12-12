@@ -27,14 +27,14 @@ class StudentTest extends TestCase{
     }
 
     public function test_ifGetMessageWorkCorrectly(){
-        //given - actor
+        //given
         $newStudent = new Student(null, "Himo", "Comment for class", null);
 
-        //when - rodaje
+        //when
         $resultGetMessageStudent = $newStudent->getMessage(); 
 
-        //then - critica
-        $this->assertEquals("Comment for Class", $resultGetMessageStudent);
+        //then
+        $this->assertEquals("Comment for class", $resultGetMessageStudent);
 
     }
 
