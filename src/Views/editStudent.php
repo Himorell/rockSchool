@@ -1,38 +1,71 @@
-<?php 
-    require_once("Components/Layout.php");
-    require_once("Components/Header.php"); 
+<?php
+    require_once("Components/layout.php");
+    require_once("Components/header.php");
 ?>
-<body>
-    <div class="edit row justify-content-center">
-        <main class="card" style="width: 80%; height:27rem; display:flex; justify-content:center; ">
 
-        <h2 class="text-center" style="margin-bottom: 3rem; margin-top: 1rem;">Edit reservations</h2>
-        <a href="./index.php"><button type="button" id="button-cancel" class="btn btn-outline-danger button-cancel">Cancel</button></a>
+<main>
 
 
-        <form class="justify-content-center " action='?action=update&id=<?php echo $data["student"]->getId() ?>' method="post">
-            <div class="input-group" style=" margin-bottom: 2rem; width: 90%; margin-left: 5%;">
-                <span class="input-group-text">Student / Team</span>
-                <!--<input type="text" name="name" required value='<?php /*echo $data["student"]->getName()*/ ?>'>-->
-                <input class="form-control" type="text" name="student" required value='<?php echo $data["student"]->getStudent() ?>'>
+<h1>Edit reservations</h1>
+   
+   <a href="./index.php" class="cancelButton" id="button-cancel">Cancel</a>
+
+
+    <div class="boxForm">
+        <form  action='?action=store' method="post">
+            <div class="inputGroup">
+                <div class="rainbowText inputGroupText">
+	                <span class="blockLine"><span><span style="color:#ff0000;">S</span><span style="color:#ff7700;">t</span><span style="color:#ffee00;">u</span><span style="color:#99ff00;">d</span><span style="color:#26ff00;">e</span><span style="color:#00ff51;">n</span><span style="color:#00ffc8;">t</span><span style="color:#00c3ff;">'</span><span style="color:#004cff;">s&nbsp;</span></span><span><span style="color:#2a00ff;">N</span><span style="color:#9d00ff;">a</span><span style="color:#ff00ea;">m</span><span style="color:#ff0073;">e</span></span></span>
+                </div>
+                <input class="formControl" placeholder="Student's name" type="text" name="student" required value='<?php echo $data["student"]->getStudent() ?>'>
             </div>
-            <div class="input-group" style="width: 90%; margin-left: 5%;">
-                <span class="input-group-text">Message</span>
-                <input class="form-control" area-label="With textarea" type="text" name="message" required value='<?php echo $data["student"]->getMessage() ?>'>
+
+            <div class="inputGroup" >
+                <div class="rainbowText inputGroupText">
+                    <span class="blockLine"><span><span style="color:#ff0000;">M</span><span style="color:#ffdd00;">e</span><span style="color:#48ff00;">s</span><span style="color:#00ff95;">s</span><span style="color:#0091ff;">a</span><span style="color:#4d00ff;">g</span><span style="color:#ff00d9;">e</span></span></span>
+                </div>
+                <input class="formControl" area-label="With textarea" type="text" name="message" required value='<?php echo $data["student"]->getMessage() ?>'>
+
             </div>
-            <div class="botones" style="margin-bottom: 2rem;">
-                <input class=editStudent type="submit" value="Edit">
-                <input class="btn-lg btn-outline-warning go-add-task float"type="reset" value="Reset">
+
+            <div class="buttonGroup">
+                <input type="submit" value="Edit">
+                <input type="reset" value="Reset">
             </div>
-            
         </form>
-    </main>
-</div>
-    <?php 
-    require_once("Components/Footer.php");
-    ?>
-    
-<script src="./js/main.js"></script>
+    </div>
 
 
-</body>
+
+
+
+
+
+
+
+
+
+
+    <div class="musicNotes">
+                <div class="note-1">
+                    &#9835; &#9833;
+                </div>
+                <div class="note-2">
+                    &#9833;
+                </div>
+                <div class="note-3">
+                    &#9839; &#9834;
+                </div>
+                <div class="note-4">
+                    &#9834;
+                </div>
+            </div>
+      
+</main>
+
+
+<?php 
+    require_once("Components/footer.php");
+?>
+
+

@@ -6,7 +6,7 @@
     <main>
             <h1>Students class reservations</h1>
             <div class="addReservation">
-                <a href="?action=create" class="actionCreate" onclick="executeExample('multipleInputs')">Add reservation</a> 
+                <a href="?action=create" class="actionCreate">Add reservation</a> 
                 <div id="bars">
                     <div class="bar"></div>
                     <div class="bar"></div>
@@ -21,16 +21,15 @@
                 </div>
             </div>
             <table>
-                <thead>
+               
                     <tr>
-                        <th scope="col">id</th>
-                        <th scope="col">Student</th>
-                        <th scope="col">Message</th>
-                        <th scope="col">Datatime</th>
-                        <th class="borderActions" scope="col">Actions</th>
+                        <td class="col" scope="col">id</td>
+                        <td class="col"  scope="col">Student</td>
+                        <td class="col" scope="col">Message</td>
+                        <td class="col" scope="col">Datatime</td>
+                        <td class="col" class="borderActions" scope="col">Actions</td>
                     </tr>
-                </thead>
-                <tbody>
+               
                     <tr>
                 <?php
                 foreach ($data["student"] as $student) {
@@ -42,14 +41,16 @@
                         <td>{$student->getDateTime()}</td>
 
 
-                        <td class='actionButtons'>
-                            <div class='boxActionDelete' onclick='executeExample('multipleInputs')'>
-                                <a href='?action=delete&id={$student->getId()}' class='actionDelete'> delete </a>
-                                <span class='iconDel'></span>
-                            </div>
-                            <div class='boxActionEdit'>
-                                <a href='?action=edit&id={$student->getId()}' class='actionEdit'> edit </a>
-                                <span class='iconEdit'></span>
+                        <td>
+                            <div class='actionButtons'>
+                                <div class='boxActionDelete' onclick='executeExample('multipleInputs')'>
+                                    <a href='?action=delete&id={$student->getId()}' class='actionDelete'> delete </a>
+                                    <span class='iconDel'></span>
+                                </div>
+                                <div class='boxActionEdit'>
+                                    <a href='?action=edit&id={$student->getId()}' class='actionEdit'> edit </a>
+                                    <span class='iconEdit'></span>
+                                </div>
                             </div>
                         </td>
 
@@ -59,7 +60,7 @@
                     }
                 ?>
                     </tr>
-                </tbody>
+              
             </table>
             <div class="musicNotes">
                 <div class="note-1">
