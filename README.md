@@ -33,6 +33,10 @@ ZoombadassRockSchool
 ****
 ![fi3ma](https://user-images.githubusercontent.com/90152938/207255368-bc3c6c76-fdbe-4e14-be68-146a3b2ee922.PNG)
 
+* Text
+
+****
+![image](https://user-images.githubusercontent.com/90152938/207256327-4b1c42cf-1c2e-4c40-b8d7-2d4433e11485.png)
 
 
 ## Stacks:
