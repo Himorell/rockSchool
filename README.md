@@ -6,10 +6,10 @@ ZoombadassRockSchool
 ***
 ## Project description:
 ***
-C: Create new users and assign an id.
-A: Read the list of existing reservations (Home page).
-U: Edit modify and update the list according to the users created.
-D: Delete the reservation of selected classes.
+* C: Create new users and assign an id.
+* R: Read the list of existing reservations (Home page).
+* U: Edit modify and update the list according to the users created.
+* D: Delete the reservation of selected classes.
 
 ***
 ## Group members:
