@@ -31,7 +31,7 @@ ZoombadassRockSchool
 * Figma
 
 ****
-![figma](https://user-images.githubusercontent.com/90152938/205267195-bc708d86-cbdb-43ca-a20b-80189bc9fe8c.PNG)
+![Uploading fi3ma.PNG…]()
 
 
 ## Stacks:
