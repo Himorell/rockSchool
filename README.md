@@ -29,9 +29,11 @@ ZoombadassRockSchool
 ![sketch](https://user-images.githubusercontent.com/90152938/205263234-2cbad3a1-44b5-49aa-883c-8eba59eeccb6.PNG)
 
 * Figma
-![fi3ma](https://user-images.githubusercontent.com/90152938/207255368-bc3c6c76-fdbe-4e14-be68-146a3b2ee922.PNG)
 
 ****
+![fi3ma](https://user-images.githubusercontent.com/90152938/207255368-bc3c6c76-fdbe-4e14-be68-146a3b2ee922.PNG)
+
+
 
 ## Stacks:
 Html, Css, Js, Php, Github, Git, Bootstrap, Mysql.
