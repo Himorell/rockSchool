@@ -40,8 +40,8 @@ ZoombadassRockSchool
 
 
 ## Stacks:
-Html, Css, Js, Php, Github, Git, Bootstrap, Mysql.
+Html, Css, Js, Php, Github, Git, Mysql.
 ***
 ## Methodology:
-Mob Programming, Pair Programming y Metodología AGILE
+Mob Programming y Metodología AGILE
 
