@@ -44,4 +44,11 @@ Html, Css, Js, Php, Github, Git, Mysql.
 ***
 ## Methodology:
 Mob Programming y Metodología AGILE
+***
+## Next steps:
+
+* Add telephone variable to the database and to the web views
+* Delete and Edit working alerts
+* Link social networks
+* Prevent date change when editing
 
