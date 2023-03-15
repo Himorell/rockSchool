@@ -52,9 +52,9 @@ Mob Programming y Metodología AGILE
 * Within the CODE tab copy the link that appears in HTTPS.
 * In your IDE run git clone an paste the HTTPS.
 * run composer install.
-* Create database in PhpMyAdmin with database name: vientosdelibertadbbdd
+* Create database in PhpMyAdmin with database name: rockschool
 * Import the following database table: rockschool\rockschool.sql
-* Test: vendor/bin/phpunit tests/CoderTest.php (4 tests, 4 assertions)
+* Test: vendor/bin/phpunit (2 tests, 2 assertions)
 
 ## Next steps:
 
