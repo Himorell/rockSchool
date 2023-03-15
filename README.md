@@ -45,6 +45,17 @@ Html, Css, Js, Php, Github, Git, Mysql.
 ## Methodology:
 Mob Programming y Metodología AGILE
 ***
+
+## How to install project:
+* Access preview with Live Server and use browser inspection.
+* In the link https://github.com/Himorell/rockSchool access the CODE tab.
+* Within the CODE tab copy the link that appears in HTTPS.
+* In your IDE run git clone an paste the HTTPS.
+* run composer install.
+* Create database in PhpMyAdmin with database name: vientosdelibertadbbdd
+* Import the following database table: rockschool\rockschool.sql
+* Test: vendor/bin/phpunit tests/CoderTest.php (4 tests, 4 assertions)
+
 ## Next steps:
 
 * Add telephone variable to the database and to the web views
